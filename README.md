@@ -11,7 +11,7 @@ Le but de ce projet est de développer un système mixte matériel/logiciel capa
 
 Le protocole DCC utilise un signal numérique pulsé sur les voies pour transmettre des commandes. Chaque paquet DCC est composé de plusieurs champs, incluant un préambule, des bits de départ, des champs d'adresse et de commande, et un bit de contrôle. Les bits sont représentés par des impulsions de durées spécifiques pour différencier les bits à 0 et à 1.
 ![protocole DCC](images/protocole%20dcc.png)
-![Exemple de trame ](images/exemple%20de%20trames.png)
+
 
 ### Structure d'un paquet DCC
 
@@ -21,6 +21,7 @@ Le protocole DCC utilise un signal numérique pulsé sur les voies pour transmet
 - **Champ de commande**: Commande envoyée au train (de 1 à 2 octets).
 - **Champ de contrôle**: XOR entre les octets des champs précédents (1 octet).
 - **Bit d'arrêt**: 1 bit à 1.
+![Exemple de trame ](images/exemple%20de%20trames.png)
 
 ## Architecture de la Centrale DCC
 
